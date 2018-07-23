@@ -30,7 +30,8 @@ Here is my [CV](assets/cv-updated.pdf).
 ## Research
 
 ### Personalized Recommendation via Importance Ranking (Nov. 2016 – Apr.2017)
-* Summer Research Internship Program 2018 (SRIP) in Electrical and Computer Engineering Department, UCSD.
+* Propose a novel recommendation algorithm, which combines the importance of users or items with collabo-rative ﬁltering algorithm to improve both accuracy and eﬃciency of recommendation. 
+* Speciﬁcally, it considers the recommender system as a bi-type heterogeneous information network and initially classiﬁes users or items into diﬀerent groups. Afterwards, with ranking information the cluster would be reﬁned, and in turn, the ranking results would be further boosted. 
 * Supervised by [Prof.Junming Shao, Big Data Research Center, UESTC](http://yz.uestc.edu.cn/daoshijieshao/mentor.php?id=11708)
 
 
