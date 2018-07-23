@@ -6,7 +6,7 @@ permalink: /About me
 order: 2
 ---
 University of Melbourne<br>
-Melbourne, Victoria<br>
+Melbourne, Victoria, Australia<br>
 Phone: (61)045-086-8869<br>
 Email: pengfei123xiao@gmail.com<br><br>
 Here is my [CV](assets/cv-updated.pdf).
