@@ -1,6 +1,6 @@
 ---
 title: Welcome to Pengfei Xiao's home page!
-icon: fa-question
+icon: fa-address-card
 order: 2
 ---
 
