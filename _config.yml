@@ -1,1 +1,25 @@
-theme: jekyll-theme-slate
+title: Pengfei Xiao
+subtitle: Master student >
+          at University of Melbourne
+description: Website and portfolio of Pengfei Xiao.
+
+author: Pengfei Xiao
+email: pengfei123xiaoh@gmail.com
+avatar: assets/images/photo.png
+
+baseurl: ""
+url: "https://prodigyxiao.github.io/"
+
+# Social settings
+facebook_url: https://www.facebook.com/profile.php?id=100006938826390
+github_url: https://github.com/prodigyxiao
+linkedin_url: https://www.linkedin.com/in/pengfei-xiao-37449b104/
+
+# Build settings
+remote_theme: chrisbobbe/jekyll-theme-prologue
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Necessary for Prologue theme:
+collections: [sections]
