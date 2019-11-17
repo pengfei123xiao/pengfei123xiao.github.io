@@ -9,7 +9,7 @@ University of Melbourne<br>
 Melbourne, Victoria, Australia<br>
 Phone: (61)045-086-8869<br>
 Email: pengfei123xiao@gmail.com<br><br>
-Here is my [CV](assets/Resume_Pengfei Xiao.pdf).
+Here is my [CV](assets/Resume_Pengfei_Xiao.pdf).
 
 ## Education
 
