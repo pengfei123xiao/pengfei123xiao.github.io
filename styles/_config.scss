@@ -1,0 +1,73 @@
+$primary-color: #444;
+$secondary-color: orangered;
+$show-home-image: true;
+$home-image: url("../img/background.jpg");
+$bg-opacity: 0.5;
+$footer-height: 40px;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      // under body element
+      background: $home-image;
+      // sets whether a bg image scrolls with the page, or is fixed
+      background-attachment: fixed;
+      // specifies the size of the background images
+      background-size: cover;
+      &::after {
+        // add an overlayer
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($primary-color, $bg-opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+// media query mixin
+// Small tablets and large smartphones (landscape view)
+$screen-small-max: 375px;
+
+// Small tablets (portrait view)
+$screen-medium-max: 768px;
+
+@mixin ipad() {
+  @media (max-width: #{$screen-medium-max}) {
+    @content;
+  }
+}
+@mixin iphone() {
+  @media (max-width: #{$screen-small-max}) {
+    @content;
+  }
+}
+
+@mixin mediaLarge() {
+  @media screen and (min-width: 770px) and (max-width: 1169px) {
+    @content;
+  }
+}
+
+@mixin mediaXLarge() {
+  @media screen and (min-width: 1170px) {
+    @content;
+  }
+}

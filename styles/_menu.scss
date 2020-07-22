@@ -1,0 +1,120 @@
+@import "config";
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $primary-color;
+  z-index: 999;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > img {
+    width: 20%;
+  }
+}
+
+// Menu button style
+.menu-btn {
+  display: none;
+  @include ipad() {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 1.5rem;
+    right: 35px;
+    cursor: pointer;
+    @include easeOut;
+    .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: set-text-color($primary-color);
+      @include easeOut;
+    }
+    // Rotate into X for menu lines
+    &.close {
+      // &.close: contain .menu-btn and .close at the same time
+      .btn-line {
+        // rotate line1
+        &:first-child {
+          transform: rotate(45deg) translate(5px, 5px); // translate will relocate the line
+          background-color: $secondary-color;
+        }
+        // hide line2
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        // rotate line3
+        &:last-child {
+          transform: rotate(-45deg) translate(6px, -6px);
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.menu__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: set-text-color($primary-color);
+    font-weight: bold;
+    &.current {
+      color: $secondary-color;
+      text-decoration: underline;
+    }
+    &:hover {
+      @include easeOut;
+      color: $secondary-color;
+    }
+  }
+  @include ipad() {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $primary-color;
+    opacity: 0.85;
+    transform: translateX(-250px);
+    @include easeOut;
+    &.show {
+      transform: translateX(0);
+      @include easeOut;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      font-size: 25px;
+      text-transform: uppercase;
+      color: set-text-color($primary-color);
+      font-weight: bold;
+      border-bottom: 1px dotted $secondary-color;
+      padding: 1.5rem;
+      &.current {
+        color: $secondary-color;
+        text-decoration: underline;
+      }
+      &:hover {
+        @include easeOut;
+        color: $secondary-color;
+      }
+    }
+  }
+}

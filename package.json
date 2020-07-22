@@ -1,0 +1,13 @@
+{
+  "name": "responsive",
+  "version": "1.0.0",
+  "description": "responsive portofolio website",
+  "main": "index.js",
+  "scripts": {
+    "npm run <cmd>": "echo \"This is the usage\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pengfei Xiao",
+  "license": "MIT",
+  "dependencies": {}
+}
