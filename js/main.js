@@ -1,6 +1,6 @@
 // homepage typing function
 let onTyping = document.getElementById('typing');
-const waitToType = "Web Developer, Software Engineer, Data Analyst";
+const waitToType = "Software Engineer, Web Developer, Data Analyst";
 let addedText = "";
 let count = 0;
 if (count <= waitToType.length) {
